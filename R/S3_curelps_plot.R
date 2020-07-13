@@ -60,7 +60,7 @@
 #' fit
 #' profile1 <- c(0, 1, 1, 0, 1, 1) # Mean age, trt = IFN, sex = Female.
 #' profile2 <- c(0, 0, 1, 0, 0, 1) # Mean age, trt = control, sex = Female.
-#' opar <- par(noread.only = TRUE)
+#' opar <- par(no.readonly = TRUE)
 #' par(mfrow = c(1, 2))
 #' plot(fit, curvetype = "probacure", plot.cred = TRUE, ylim = c(0,1),
 #'      covar.profile = profile1, cred.int = 0.90,
