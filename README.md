@@ -1,4 +1,8 @@
-<!-- README.md is generated from README.Rmd. Please edit that file --->
+
+
+![GitHub top
+language](https://img.shields.io/github/languages/top/oswaldogressani/blapsr?label=R) ![GitHub
+reposize](https://img.shields.io/github/repo-size/oswaldogressani/blapsr?label=Repo%20size) ![GitHub All Releases](https://img.shields.io/github/downloads/oswaldogressani/blapsr/total?label=Downloads) ![GitHub last commit](https://img.shields.io/github/last-commit/oswaldogressani/blapsr?color=yellow&label=Last%20commit)
 
 Purpose
 =======
