@@ -8,9 +8,9 @@
 
 &nbsp; 
 
-![GitHub top
+![GitHub followers](https://img.shields.io/github/followers/oswaldogressani?style=social) ![GitHub top
 language](https://img.shields.io/github/languages/top/oswaldogressani/blapsr?label=R) ![GitHub
-reposize](https://img.shields.io/github/repo-size/oswaldogressani/blapsr?label=Repo%20size) ![GitHub All Releases](https://img.shields.io/github/downloads/oswaldogressani/blapsr/total?label=Downloads) 
+reposize](https://img.shields.io/github/repo-size/oswaldogressani/blapsr?label=Repo%20size) ![GitHub All Releases](https://img.shields.io/github/downloads/oswaldogressani/blapsr/total?label=Downloads) ![CRAN/METACRAN](https://img.shields.io/cran/l/blapsr?color=purple&label=License) ![CRAN/METACRAN](https://img.shields.io/cran/v/blapsr?color=gold&label=CRAN)
 
 &nbsp;
 
@@ -23,6 +23,7 @@ on the combination of Bayesian P-splines for flexible estimation of smooth
 functions and Laplace approximations to (selected) posterior distributions.
 
 ### Version ###
+<hr />
 This is version 0.5.1, published on CRAN 2020-07-13.
 
 ### Website ###
