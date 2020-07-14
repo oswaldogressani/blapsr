@@ -29,7 +29,8 @@ This is version 0.5.1, published on CRAN 2020-07-13.
 ### Website ###
 <hr />
 
-A website is dedicated to the package: www.blapsr-project.org
+A website is dedicated to the package: www.blapsr-project.org. The link to the
+CRAN page is https://cran.r-project.org/package=blapsr .
 
 ### Special thanks ###
 <hr />
