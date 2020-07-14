@@ -22,6 +22,9 @@ in survival models and (generalized) additive models. The methodology is based
 on the combination of Bayesian P-splines for flexible estimation of smooth 
 functions and Laplace approximations to (selected) posterior distributions.
 
+### Version ###
+This is version 0.5.1, published on CRAN 2020-07-13.
+
 ### Website ###
 <hr />
 

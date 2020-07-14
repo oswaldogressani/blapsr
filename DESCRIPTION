@@ -1,7 +1,7 @@
 Package: blapsr
 Type: Package
 Title: Bayesian Inference with Laplace Approximations and P-Splines
-Version: 0.5.1
+Version: 0.5.1.1
 Depends: R (>= 3.6.0),
          survival (>= 2.44.1)
 Authors@R: c(person("Oswaldo","Gressani", email="oswaldo_gressani@hotmail.fr",
