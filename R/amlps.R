@@ -104,17 +104,21 @@ amlps <- function(formula, data, K = 30, penorder = 2, cred.int = 0.95){
   if(missing(data)) {
     mf <- stats::model.frame(formula) # Extract model frame from formula
     X  <- stats::model.matrix(mf)     # Full design matrix
+    colXnames <- colnames(X)
     smterms <- grepl("sm(", colnames(X), fixed = TRUE)
     X <- cbind(X[, as.logical(1 - smterms)], X[, smterms])
+    colnames(X) <- colXnames
   } else{
     mf <- stats::model.frame(formula, data = data)
     X <- stats::model.matrix(mf, data = data)
+    colXnames <- colnames(X)
     smterms <- grepl("sm(", colnames(X), fixed = TRUE)
     X <- cbind(X[, as.logical(1 - smterms)], X[, smterms])
+    colnames(X) <- colXnames
   }
   if(any(is.infinite(X)))
     stop("Covariates contain Inf, NA or NaN values")
-  q  <- sum(grepl("sm(", colnames(X), fixed = TRUE)) # Number of smooth terms
+  q  <- sum(smterms) # Number of smooth terms
   if(q == 0)
     stop("Model does not contain any smooth terms")
   p  <- ncol(X) - q # Number of regression coefficients in linear part
@@ -342,7 +346,23 @@ amlps <- function(formula, data, K = 30, penorder = 2, cred.int = 0.95){
     else(message("Newton-Raphson algorithm failed convergence"))
   }
 
-  newton <- NRaphson(rep(8, q))
+  NR.start <- rep(8, q)  # Newton-Raphson starting point
+  NR.counter <- 1        # Number of Newton-Raphson runs
+  NR.fail <- 0           # Indicator if Newton-Raphson fails
+
+  newton <- NRaphson(NR.start)
+
+  while (sum(abs(gradient(newton$voptim)) < 0.2) != q) {
+    NR.start <- NR.start / 2
+    newton <- NRaphson(NR.start)
+    NR.counter <- NR.counter + 1
+    if (NR.counter >= 5) {
+      NR.fail <- 1
+      break
+    }
+  }
+  if(NR.fail == 1)
+    stop("Newton-Raphson did not converge")
 
   # Extracting info from newton
   v.max <- newton$voptim

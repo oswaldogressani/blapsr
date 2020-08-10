@@ -103,13 +103,17 @@ plot.amlps <- function(x, xp, smoo.index, cred.int = 0.95, plot.cred = TRUE,
   if(is.null(x$data)) {
     mf <- stats::model.frame(x$formula) # Extract model frame from formula
     X  <- stats::model.matrix(mf)     # Full design matrix
+    colXnames <- colnames(X)
     smterms <- grepl("sm(", colnames(X), fixed = TRUE)
     X <- cbind(X[, as.logical(1 - smterms)], X[, smterms])
+    colnames(X) <- colXnames
   } else{
     mf <- stats::model.frame(x$formula, data = x$data)
     X <- stats::model.matrix(mf, data = x$data)
+    colXnames <- colnames(X)
     smterms <- grepl("sm(", colnames(X), fixed = TRUE)
     X <- cbind(X[, as.logical(1 - smterms)], X[, smterms])
+    colnames(X) <- colXnames
   }
   q  <- x$q      # Number of smooth terms in model
   p  <- ncol(X) - q   # Number of regression coefficients in linear part
