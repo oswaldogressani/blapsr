@@ -566,7 +566,7 @@ gamlps <- function(formula, data, K = 30, family = c("gaussian", "poisson",
   newton <- NRaphson(NR.start)
 
   while (sum(abs(gradient(newton$voptim,
-                          Laplace(rep(0, H),newton$voptim))) < 0.2) != q) {
+                          Laplace(rep(0, H),newton$voptim))) < 0.5) != q) {
     NR.start <- NR.start - 2
     newton <- NRaphson(NR.start)
     NR.counter <- NR.counter + 1
