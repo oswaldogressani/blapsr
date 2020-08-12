@@ -125,6 +125,7 @@ amlps <- function(formula, data, K = 30, penorder = 2, cred.int = 0.95){
   n  <- nrow(X)     # Sample size
   Z  <- scale(X[, 1:p], center = TRUE, scale = FALSE)  # Centered Z matrix
   Z[, 1] <- rep(1, n) # Column for intercept
+  if(ncol(Z)==1) colnames(Z) <- "(Intercept)"
   y  <- as.numeric(stats::model.extract(mf, "response")) # Response vector
   if(any(is.infinite(y)) || any(is.na(y)))
     stop("Response contains Inf, NA or NaN values")

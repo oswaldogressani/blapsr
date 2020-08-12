@@ -144,6 +144,7 @@ gamlps <- function(formula, data, K = 30, family = c("gaussian", "poisson",
   n  <- nrow(X)     # Sample size
   Z  <- scale(X[, 1:p], center = TRUE, scale = FALSE)  # Centered Z matrix
   Z[, 1] <- rep(1, n) # Column for intercept
+  if(ncol(Z)==1) colnames(Z) <- "(Intercept)"
   y  <- as.numeric(stats::model.extract(mf, "response")) # Response vector
   if(any(is.infinite(y)) || any(is.na(y)))
     stop("Response contains Inf, NA or NaN values")
@@ -566,10 +567,10 @@ gamlps <- function(formula, data, K = 30, family = c("gaussian", "poisson",
 
   while (sum(abs(gradient(newton$voptim,
                           Laplace(rep(0, H),newton$voptim))) < 0.2) != q) {
-    NR.start <- NR.start / 2
+    NR.start <- NR.start - 2
     newton <- NRaphson(NR.start)
     NR.counter <- NR.counter + 1
-    if (NR.counter >= 5) {
+    if (NR.counter >= 7) {
       NR.fail <- 1
       break
     }
