@@ -25,7 +25,7 @@ functions and Laplace approximations to (selected) posterior distributions.
 ### Version ###
 <hr />
 First version (0.5.1) was published on CRAN 2020-07-13. <br>
-This is version 0.5.5.
+This is version 0.5.5 (submitted to CRAN on 2020-10-19).
 
 ### Website ###
 <hr />
