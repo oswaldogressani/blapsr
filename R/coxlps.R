@@ -163,8 +163,8 @@ coxlps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
   if (K < 10 || K > 60)
     stop("Number K of B-splines in basis should be between 10 and 60")
   H <- K + nbeta  # Latent field dimension
-  if (n <= H)
-    stop("Number of parameters to estimate must be smaller than sample size")
+  if (n < H)
+    warning("Number of coefficients to be estimated is larger than sample size")
   penorder <- floor(penorder)
   if(penorder < 2 || penorder > 3)
     stop("Penalty order must be either 2 or 3")

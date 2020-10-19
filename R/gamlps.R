@@ -200,7 +200,7 @@ gamlps <- function(formula, data, K = 30, family = c("gaussian", "poisson",
   B <- cbind(Z, do.call(cbind, B.list.trim)) # Design matrix ncol: q * (K-1) + p
   H <- p + (q * (K - 1))  # Latent field dimension
   if(n < H)
-    stop("Number of coefficients to be estimated is larger than sample size")
+    warning("Number of coefficients to be estimated is larger than sample size")
 
   # Penalty matrix
   D <- diag(K) # Diagonal matrix

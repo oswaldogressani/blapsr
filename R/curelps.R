@@ -255,8 +255,8 @@ curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
   ngamma <- ncol(Z)          # Number of regression coeff. in Cox PH part
   n <- length(time)          # Sample size
   H <- K + nbeta + ngamma    # Latent field dimension
-  if(n <= H)
-    stop("Number of parameters to estimate must be smaller than sample size")
+  if(n < H)
+    warning("Number of coefficients to be estimated is larger than sample size")
   constr <- 6                # Constraint on last B-spline coefficient
   penorder <- floor(penorder)
   if(penorder < 2 || penorder > 3)

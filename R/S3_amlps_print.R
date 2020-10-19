@@ -68,7 +68,7 @@ print.amlps <- function(x, ...) {
   cat("Number of B-splines in basis:", x$K, sep = " ", "\n")
   cat("Number of smooth terms:      ", x$q, sep = " ", "\n")
   cat("Penalty order:               ", x$penalty.order, sep = " ", "\n")
-  cat("Latent field dimension:      ", x$latfield.dim, sep = " ", "\n")
+  cat("Latent vector dimension:     ", x$latfield.dim, sep = " ", "\n")
   cat("Model degrees of freedom:    ",
       format(x$ED, nsmall = 2, digits = 2), "\n")
   cat("\n")

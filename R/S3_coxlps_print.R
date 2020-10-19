@@ -22,7 +22,7 @@ print.coxlps <- function(x, ...) {
   cat("\n")
   cat("Number of B-splines in basis:", x$K, "\n")
   cat("Number of parametric coeffs.:", x$p, "\n")
-  cat("Latent field dimension      :", x$latfield.dim, "\n")
+  cat("Latent vector dimension     :", x$latfield.dim, "\n")
   cat("Penalty order               :", x$penalty.order, "\n")
   cat("Sample size                 :", x$n, "\n")
   cat("Number of events:           :", x$num.events, "\n")
@@ -37,8 +37,8 @@ print.coxlps <- function(x, ...) {
   print.table(format(round(as.matrix(as.data.frame(x$regcoeff)[,5:8]),
                            digits = 4), nsmall = 4), right = TRUE)
   cat("--- \n")
-  cat("AIC.p=",  format(round(x$AIC.p, 4), nsmall = 4),
-      "AIC.ED=", format(round(x$AIC.ED, 4), nsmall = 4), "\n")
-  cat("BIC.p=", format(round(x$BIC.p, 4), nsmall = 4),
-      "BIC.ED=", format(round(x$BIC.ED, 4), nsmall = 4), "\n")
+  cat("AIC.p =",  format(round(x$AIC.p, 4), nsmall = 4),
+      "AIC.ED =", format(round(x$AIC.ED, 4), nsmall = 4), "\n")
+  cat("BIC.p =", format(round(x$BIC.p, 4), nsmall = 4),
+      "BIC.ED =", format(round(x$BIC.ED, 4), nsmall = 4), "\n")
 }

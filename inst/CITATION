@@ -1,16 +1,26 @@
 citHeader("To cite the blapsr package in publications use:")
 
 citEntry(entry = "Manual",
-  title        = "The blapsr package for fast inference in latent Gaussian models by combining Laplace
-                  approximations and P-splines",
+  title        = "The blapsr package for fast Bayesian inference in latent Gaussian models
+    by combining Laplace approximations and P-splines.",
   author       = personList(as.person("Gressani Oswaldo"), as.person("Lambert Philippe")),
   year         = "2020",
   url          = "https://www.blapsr-project.org/",
 
   textVersion  =
   paste("Gressani, O. and Lambert, P. (2020).",
-        "The blapsr package for fast inference in latent Gaussian models by combining Laplace approximations and P-splines.",
-        "URL https://www.blapsr-project.org/.")
+        "The blapsr package for fast Bayesian inference in latent Gaussian models
+    by combining Laplace approximations and P-splines.",
+    "https://www.blapsr-project.org/.")
 )
 
-citFooter("A lot of time and effort was required to create this package. Please consider citing the package when using it for data analysis.")
+citFooter("Associated publications:
+
+[1] Gressani, O. and Lambert, P. (2018). Fast Bayesian inference using Laplace
+approximations in a flexible promotion time cure model based
+on P-splines. Computational Statistics & Data Analysis 124, 151-167.
+
+[2] Gressani, O. and Lambert, P. (2021). Laplace approximations for fast
+Bayesian inference in generalized additive models based on P-splines. Computational Statistics & Data Analysis 154.
+
+A lot of time and effort was required to create this package. Please consider citing the package when using it for data analysis.")

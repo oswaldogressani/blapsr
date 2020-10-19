@@ -70,7 +70,7 @@ print.gamlps <- function(x, ...) {
   cat("Number of B-splines in basis:", x$K, "\n")
   cat("Number of smooth terms:      ", x$q, "\n")
   cat("Penalty order:               ", x$penalty.order, "\n")
-  cat("Latent field dimension:      ", x$latfield.dim, "\n")
+  cat("Latent vector dimension:     ", x$latfield.dim, "\n")
   cat("Model degrees of freedom:    ",
       format(x$ED, nsmall = 2, digits = 2), "\n")
   cat("\n")

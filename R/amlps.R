@@ -157,7 +157,7 @@ amlps <- function(formula, data, K = 30, penorder = 2, cred.int = 0.95){
   ByyB <- (t(B) %*% y %*% t(y) %*% B)
   H <- p + (q * (K - 1))  # Latent field dimension
   if(n < H)
-    stop("Number of coefficients to be estimated is larger than sample size")
+    warning("Number of coefficients to be estimated is larger than sample size")
 
   # Penalty matrix
   D <- diag(K) # Diagonal matrix

@@ -14,9 +14,9 @@ Description: Laplace approximations and penalized B-splines are combined
     used to fit survival models, especially proportional hazards and promotion 
     time cure models (Gressani, O. and Lambert, P. (2018) 
     <doi:10.1016/j.csda.2018.02.007>). The Laplace-P-spline methodology can also
-    be implemented for inference in additive and generalized additive models
-    (Gressani, O. and Lambert, P. (2020) <arXiv:2003.07214>). See the associated
-    website for more information and examples.
+    be implemented for inference in (generalized) additive models
+    (Gressani, O. and Lambert, P. (2021) <doi:10.1016/j.csda.2020.107088>).
+    See the associated website for more information and examples.
 URL: <https://www.blapsr-project.org/>
 License: GPL-3
 Encoding: UTF-8
