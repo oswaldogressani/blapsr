@@ -25,12 +25,12 @@ functions and Laplace approximations to (selected) posterior distributions.
 ### Version ###
 <hr />
 First version (0.5.1) was published on CRAN 2020-07-13. <br>
-This is version 0.5.5 (submitted to CRAN on 2020-10-19).
+This is version 0.6.1 (submitted to CRAN on 2022-08-20).
 
 ### Website ###
 <hr />
 
-A website is dedicated to the package: www.blapsr-project.org. The link to the
+A website is dedicated to the package: https://blapsr-project.org. The link to the
 CRAN page is https://cran.r-project.org/package=blapsr .
 
 ### Special thanks ###

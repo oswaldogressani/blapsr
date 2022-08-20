@@ -31,6 +31,8 @@
 #'  basis. The default is NULL, so that the B-spline basis is specified
 #'  in the interval \emph{[0, tup]}, where \emph{tup} is the upper bound of
 #'  the follow-up times. It is required that \emph{tmax} > \emph{tup}.
+#' @param constr Constraint imposed on last B-spline coefficient
+#'  (default is 6).
 #'
 #' @details The log-baseline hazard is modeled as a linear combination of
 #'   \code{K} cubic B-splines as obtained from \code{\link{cubicbs}}. A
@@ -104,7 +106,8 @@
 #'   Journal} \strong{61}(2): 275-289. \url{https://doi.org/10.1002/bimj.201700250}
 #' @export
 
-curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
+curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL,
+                    constr = 6){
 
   if (!inherits(formula, "formula"))
     stop("Incorrect model formula")
@@ -143,7 +146,7 @@ curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
     for (j in 3:ncol(mff)) {
       col.pos <- match(1, as.numeric(colnames(mff[j]) == colnames(mff)))
 
-      if (class(mff[, col.pos]) == "factor") {
+      if (is.factor(class(mff[, col.pos]))) {
         if (grepl(colnames(mff)[col.pos], lt.vars, fixed = TRUE)) {
           ncovar.lt <- ncovar.lt + (nlevels(mff[, col.pos]) - 1)
           lt.vars <- gsub(colnames(mff)[col.pos], replacement = "", lt.vars)
@@ -185,7 +188,7 @@ curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
     for (j in 3:ncol(mff)) {
       col.pos <- match(1, as.numeric(colnames(mff[j]) == colnames(data)))
 
-      if (class(data[, col.pos]) == "factor") {
+      if (is.factor(class(data[, col.pos]))) {
         if (grepl(colnames(data)[col.pos], lt.vars, fixed = TRUE)) {
           ncovar.lt <- ncovar.lt + (nlevels(data[, col.pos]) - 1)
           lt.vars <-
@@ -257,7 +260,7 @@ curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
   H <- K + nbeta + ngamma    # Latent field dimension
   if(n < H)
     warning("Number of coefficients to be estimated is larger than sample size")
-  constr <- 6                # Constraint on last B-spline coefficient
+  constr <- constr                # Constraint on last B-spline coefficient
   penorder <- floor(penorder)
   if(penorder < 2 || penorder > 3)
     stop("Penalty order must be either 2 or 3")
@@ -538,10 +541,10 @@ curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
     Laplace <- Laplace.approx(latent0, v)
 
     # Output of Laplace approximation
-    Sigmastar <- Laplace$Sigmastar # Unconstrained latent  covariance matrix
-    Sigstar.c <- Laplace$Sigstar.c # Constrained covariance matrix
-    latstar <- Laplace$latstar     # Unconstrained mode of Laplace approx.
-    latstar.c <- Laplace$latstar.c # Constrained mode of dimension H-1
+    Sigmastar <- Laplace$Sigmastar   # Unconstrained latent  covariance matrix
+    Sigstar.c <- Laplace$Sigstar.c   # Constrained covariance matrix
+    latstar <- Laplace$latstar       # Unconstrained mode of Laplace approx.
+    latstar.c <- Laplace$latstar.c   # Constrained mode of dimension H-1
     latstar.cc <- Laplace$latstar.cc # Constrained mode of dimension H
 
     # Computation of the log-posterior of v
@@ -636,7 +639,11 @@ curelps <- function(formula, data, K = 30, penorder = 2, tmax = NULL){
       v.grid <- rev(v.grid)
       logpv.v <- rev(logpv.v)
 
-      vmap <- (v.grid[1] + v.grid[3]) / 2
+      if (length(v.grid) >= 3) {
+        vmap <- (v.grid[1] + v.grid[3]) / 2
+      } else{
+        vmap <- (v.grid[1] + v.grid[2]) / 2
+      }
       logpvmap <- logpost.v(vmap, latent0)$y
       nquad <- 8
       left.step.j  <- (-1)

@@ -857,7 +857,7 @@ gamlps <- function(formula, data, K = 30, family = c("gaussian", "poisson",
   matdiagH <- matrix(0, nrow = nv.sample, ncol = H)
 
   for (s in 1:nv.sample) {
-    if(class(try(diagHmatrix(v.sample[s, ]), silent = TRUE)) == "numeric") {
+    if(is.numeric(class(try(diagHmatrix(v.sample[s, ]), silent = TRUE)))) {
       matdiagH[s, ] <- diagHmatrix(v.sample[s, ])
     } else {
       matdiagH[s, ] <- diagHmatrix(v.max)

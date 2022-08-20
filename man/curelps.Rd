@@ -4,7 +4,7 @@
 \alias{curelps}
 \title{Promotion time cure model with Laplace P-splines.}
 \usage{
-curelps(formula, data, K = 30, penorder = 2, tmax = NULL)
+curelps(formula, data, K = 30, penorder = 2, tmax = NULL, constr = 6)
 }
 \arguments{
 \item{formula}{A formula object where the ~ operator separates the response
@@ -34,6 +34,9 @@ penalty (the default) or 3 for a third-order penalty.}
 basis. The default is NULL, so that the B-spline basis is specified
 in the interval \emph{[0, tup]}, where \emph{tup} is the upper bound of
 the follow-up times. It is required that \emph{tmax} > \emph{tup}.}
+
+\item{constr}{Constraint imposed on last B-spline coefficient
+(default is 6).}
 }
 \value{
 An object of class \code{curelps} containing various components

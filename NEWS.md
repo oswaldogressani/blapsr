@@ -16,5 +16,9 @@
   is the case.
   
 * Citation information for this package has been updated.
+
+### Changes in version 0.6.1 ###
+
+* **2022-08-20:** Updated internal functions.
   
 
