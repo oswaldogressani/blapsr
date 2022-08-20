@@ -11,7 +11,7 @@
 #'  the estimated effective degrees of freedom of the smooth terms are
 #'  displayed.
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @seealso \code{\link{gamlps}}, \code{\link{gamlps.object}},
 #'  \code{\link{plot.gamlps}}

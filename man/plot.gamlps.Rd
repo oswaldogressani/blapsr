@@ -82,5 +82,5 @@ Produces a plot of a smooth additive term fitted with the
  \code{\link{print.gamlps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

@@ -67,20 +67,18 @@ sim <- simcuredata(n = 300, censor = "Weibull", KapMeier = TRUE)
 Bender, R., Augustin, T. and Blettner, M. (2005). Generating
  survival times to simulate Cox proportional hazards models,
  \emph{Statistics in Medicine} \strong{24}(11): 1713-1723.
- \url{https://doi.org/10.1002/sim.2059}
 
 Bremhorst, V. and Lambert, P. (2016). Flexible estimation in
   cure survival models using Bayesian P-splines. \emph{Computational
   Statistics & Data Analysis} \strong{93}: 270-284.
-  \url{https://doi.org/10.1016/j.csda.2014.05.009}
 
 Gressani, O. and Lambert, P. (2018). Fast Bayesian inference
   using Laplace approximations in a flexible promotion time cure model based
   on P-splines. \emph{Computational Statistics & Data Analysis} \strong{124}:
-  151-167. \url{https://doi.org/10.1016/j.csda.2018.02.007}
+  151-167.
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 
 This function is based on a routine used to describe a simulation setting in
 Bremhorst and Lambert (2016). Special thanks go to Vincent Bremhorst who

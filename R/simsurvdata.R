@@ -4,11 +4,11 @@
 #' from a Weibull distribution, while censoring times are generated from an
 #' exponential distribution.
 #'
-#' @param a,b The shape parameter \code{a>0} and scale parameter \code{b>0}
-#'    of the Weibull.
+#' @param a,b The shape parameter `a>0` and scale parameter `b>0`
+#' of the Weibull.
 #' @param n Sample size.
 #' @param betas A numeric vector of regression coefficients. Allowed components
-#'  of \code{betas} are in the interval \emph{[-1 ,1]} and the total
+#'  of `betas` are in the interval \emph{[-1 ,1]} and the total
 #'  number of components cannot exceed 5.
 #' @param censperc A numeric value in \emph{[0,100]} corresponding to
 #'        the targeted percentage of censoring.
@@ -23,13 +23,13 @@
 #'   The i\emph{th} latent event time is denoted by \emph{T_i} and is generated
 #'   following Bender et al. (2005) as follows:
 #'   \deqn{T_i = b (-log(U_i) exp(-\beta^T x_i))^(1/a),}
-#'   where \emph{U_i} is a uniform random variable obtained with \code{runif(1)}
+#'   where \emph{U_i} is a uniform random variable obtained with `runif(1)`
 #'   , \emph{x_i} is the i\emph{th} row of a covariate matrix X of dimension
-#'   \code{c(n, length(betas))} where each component is generated from a
+#'   `c(n, length(betas))` where each component is generated from a
 #'   standard Gaussian distribution and \eqn{\beta} is the vector of
-#'   regression coefficients given by \code{betas}.
+#'   regression coefficients given by `betas`.
 #'
-#' @return An object of class \code{simsurvdata} which is a list
+#' @return An object of class `simsurvdata` which is a list
 #' with the following components:
 #'
 #' \item{sample.size}{Sample size.}
@@ -39,7 +39,7 @@
 #'
 #' \item{num.events}{Number of events.}
 #'
-#' \item{censoring.percentage \verb{ }}{The effective censoring percentage.}
+#' \item{censoring.percentage}{The effective censoring percentage.}
 #'
 #' \item{survdata}{A data frame containing the simulated data.}
 #'
@@ -58,10 +58,10 @@
 #'  \item{Weibull.variance}{The variance of the Weibull used to generate latent
 #'   event times.}
 #'
-#' The \code{print} method summarizes the generated right censored data and
-#' the \code{plot} method produces a graph with time on the x axis and
+#' The `print` method summarizes the generated right censored data and
+#' the `plot` method produces a graph with time on the x axis and
 #' horizontal bars on the y axis corresponding either to an event or a
-#' right censored observation. If \code{n > 25}, only the 25 first observations
+#' right censored observation. If `n > 25`, only the 25 first observations
 #' are plotted.
 #'
 #' @examples
@@ -70,12 +70,11 @@
 #' sim
 #' plot(sim)
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @references Bender, R., Augustin, T. and Blettner, M. (2005). Generating
 #'             survival times to simulate Cox proportional hazards models,
 #'             \emph{Statistics in Medicine} \strong{24}(11): 1713-1723.
-#'             \url{https://doi.org/10.1002/sim.2059}
 #' @references Hamada, M. S., Wilson, A., Reese, C. S. and Martz, H. (2008).
 #'            \emph{Bayesian Reliability}. Springer Science and Business Media.
 #' @export

@@ -32,5 +32,5 @@ Print method for a \code{curelps} object.
  \code{\link{plot.curelps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

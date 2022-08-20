@@ -27,5 +27,5 @@ Prints informative output of a fitted additive partial linear model.
  \code{\link{plot.amlps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

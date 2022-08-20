@@ -101,17 +101,16 @@ Fan, Y. and Li, Q. (2003). A kernel-based method for estimating
 Gressani, O. and Lambert, P. (2018). Fast Bayesian inference
  using Laplace approximations in a flexible promotion time cure model based
  on P-splines. \emph{Computational Statistical & Data Analysis} \strong{124}:
- 151-167. \url{https://doi.org/10.1016/j.csda.2018.02.007}
+ 151-167.
 
 Opsomer, J. D. and Ruppert, D. (1999). A root-n consistent
  backfitting estimator for semiparametric additive modeling. \emph{Journal of
  Computational and Graphical Statistics}, \strong{8}(4): 715-732.
- \url{https://doi.org/10.1080/10618600.1999.10474845}
 }
 \seealso{
 \code{\link{cubicbs}}, \code{\link{amlps.object}},
  \code{\link{print.amlps}}, \code{\link{plot.amlps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

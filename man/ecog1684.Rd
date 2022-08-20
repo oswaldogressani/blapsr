@@ -36,6 +36,5 @@ Kirkwood, J. M., Strawderman, M. H., Ernstoff, M. S.,
 Corbiere, F. and Joly, P. (2007). A SAS macro for parametric
  and semiparametric mixture cure models. \emph{Computer methods and programs
  in Biomedicine} \strong{85}(2): 173-180.
- \url{https://doi.org/10.1016/j.cmpb.2006.10.008}
 }
 \keyword{datasets}

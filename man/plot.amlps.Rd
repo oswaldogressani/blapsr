@@ -100,5 +100,5 @@ plot(fit, xp = c(-0.8, -0.4, 0, 0.4, 0.8), smoo.index = 2, ylim=c(-3, 3))
  \code{\link{print.amlps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

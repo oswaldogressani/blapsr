@@ -17,7 +17,7 @@ Description: Laplace approximations and penalized B-splines are combined
     be implemented for inference in (generalized) additive models
     (Gressani, O. and Lambert, P. (2021) <doi:10.1016/j.csda.2020.107088>).
     See the associated website for more information and examples.
-URL: <https://blapsr-project.org/>
+URL: <https://www.blapsr-project.org/>
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

@@ -28,5 +28,5 @@ Prints informative output of a fitted generalized additive model.
  \code{\link{plot.gamlps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

@@ -80,5 +80,5 @@ curelps.extract(fit, time = c(0, 1, 2, 3), curvetype = "probacure",
  \code{\link{plot.curelps}}, \code{\link{print.curelps}}.
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

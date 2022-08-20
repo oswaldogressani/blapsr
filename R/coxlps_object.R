@@ -19,7 +19,7 @@
 #'  \code{sd} is the standard deviation.}
 #' \item{tup}{The upper bound of the follow-up, i.e. \code{max(event.times)}.}
 #' \item{sd.time}{The standard deviation of the event times in original scale.}
-#' \item{event.indicators\verb{  }}{The event indicators.}
+#' \item{event.indicators}{The event indicators.}
 #' \item{regcoeff}{Posterior estimates of the regression coefficients.
 #' \emph{coef} gives the point estimate, \emph{sd.post} gives the posterior
 #'  standard deviation, \emph{z} is the Wald test statistic, \emph{lower .95}
@@ -50,7 +50,7 @@
 #'
 #' @seealso \code{\link{coxlps}}, \code{\link{coxlps.baseline}}
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @name coxlps.object
 NULL

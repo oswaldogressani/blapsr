@@ -8,7 +8,7 @@
 #' @details Prints informative output of a fitted Cox proportional hazards model
 #'  with Laplace-P-splines.
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @seealso \code{\link{coxlps}}
 #'

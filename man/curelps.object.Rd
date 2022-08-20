@@ -16,7 +16,7 @@ A \code{curelps} object has the following elements:
 \item{n}{Sample size.}
 \item{num.events}{The number of events that occurred.}
 \item{tup}{The upper bound of the follow up, i.e. \code{max(event.times)}.}
-\item{event.indicators\verb{  }}{The event indicators.}
+\item{event.indicators}{The event indicators.}
 \item{coeff.probacure}{Posterior estimates of the regression coefficients
  related to the cure probability (or long-term survival).}
 \item{coeff.cox}{Posterior estimates of the regression coefficients
@@ -57,5 +57,5 @@ using the Laplace-P-spline methodology.
 \code{\link{curelps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

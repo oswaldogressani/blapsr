@@ -8,11 +8,11 @@ coxlps.baseline(object, time = NULL, compute.cred = TRUE, cred.int = 0.95,
                 verbose = TRUE)
 }
 \arguments{
-\item{object}{An object of class \code{coxlps}.}
+\item{object}{An object of class `coxlps`.}
 
 \item{time}{A vector of time values on which to compute the estimated
-baseline quantities. Each component of \code{time} must be between 0 and
-the largest observed follow-up time. If time is \code{NULL} (the default),
+baseline quantities. Each component of `time` must be between 0 and
+the largest observed follow-up time. If time is `NULL` (the default),
 then only the baseline median lifetime (if available) is computed.}
 
 \item{compute.cred}{Should the credible intervals be computed? Default is
@@ -29,19 +29,19 @@ Default is TRUE.}
 A list with the following components:
 
   \item{fit.time}{A matrix with point and set estimates of
-  the baseline hazard and survival curves for values provided in \code{time}.
-  Only available if \code{time} is not \code{NULL}. Column \emph{Time}
-  summarizes the provided values in \code{time}. Columns named \emph{h0},
+  the baseline hazard and survival curves for values provided in `time`.
+  Only available if `time` is not `NULL`. Column \emph{Time}
+  summarizes the provided values in `time`. Columns named \emph{h0},
   \emph{S0}, are the point estimates of the baseline hazard and baseline
   survival respectively. \emph{low} and \emph{up} give the lower and
   upper bound respectively of the approximate pointwise credible interval.}
 
-  \item{median.lifetime \verb{ }}{The estimated baseline median lifetime.}
+  \item{median.lifetime}{The estimated baseline median lifetime.}
 
-  \item{cred.int \verb{ }}{The chosen level to construct credible intervals.}
+  \item{cred.int}{The chosen level to construct credible intervals.}
 }
 \description{
-The routine takes as input an object of class \code{coxlps} and computes
+The routine takes as input an object of class `coxlps` and computes
 point estimates and credible intervals for the baseline hazard and survival
 on a user-specified time vector.
 }
@@ -58,9 +58,6 @@ fit <- coxlps(Surv(time, delta) ~ x1 + x2 + x3, data = simdat, K = 20)
 coxlps.baseline(fit, time = seq(0, 2, by = 0.5), cred.int = 0.90)
 
 }
-\seealso{
-\code{\link{coxlps}}, \code{\link{coxlps.object}}
-}
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

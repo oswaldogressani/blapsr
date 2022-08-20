@@ -37,11 +37,10 @@
 #'   covariate matrix around their mean value for numerical stability.
 #'
 #' @return An object of class \code{coxlps} containing various components from
-#'   the fit. Details can be found in \code{\link{coxlps.object}}. Plot of
+#'   the fit. Details can be found in coxlps.object. Plot of
 #'   estimated smooth hazard and survival curves can be obtained using
 #'   \code{\link{plot.coxlps}}. If required, estimated baseline quantities
-#'   on specific time values can be obtained with
-#'   \code{\link{coxlps.baseline}}.
+#'   on specific time values can be obtained with coxlps.baseline.
 #'
 #' @import survival
 #' @examples
@@ -96,22 +95,21 @@
 #' plot(fit, h0 = FALSE, overlay.km = TRUE, plot.cred = FALSE)
 #'
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
-#' @seealso \code{\link{Surv}}, \code{\link{coxph}}, \code{\link{simsurvdata}},
-#'  \code{\link{coxlps.object}}, \code{\link{coxlps.baseline}}.
+#' @seealso \code{\link{Surv}}, \code{\link{coxph}}, \code{\link{simsurvdata}}
 #'
 #' @references Cox, D.R. (1972). Regression models and life-tables.
 #'   \emph{Journal of the Royal Statistical Society: Series B (Methodological)}
-#'   \strong{34}(2): 187-202. \url{https://doi.org/10.1111/j.2517-6161.1972.tb00899.x}
+#'   \strong{34}(2): 187-202.
 #' @references Gressani, O. and Lambert, P. (2018). Fast Bayesian inference
 #'   using Laplace approximations in a flexible promotion time cure model based
 #'   on P-splines. \emph{Computational Statistical & Data Analysis} \strong{124}:
-#'   151-167. \url{https://doi.org/10.1016/j.csda.2018.02.007}
+#'   151-167.
 #' @references Jullion, A. and Lambert, P. (2007). Robust specification of the
 #'   roughness penalty prior distribution in spatially adaptive Bayesian
 #'   P-splines models. \emph{Computational Statistical & Data Analysis}
-#'   \strong{51}(5): 2542-2558. \url{https://doi.org/10.1016/j.csda.2006.09.027}
+#'   \strong{51}(5): 2542-2558.
 #'
 #' @export
 

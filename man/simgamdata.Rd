@@ -57,8 +57,8 @@ plot(sim)
 \references{
 Antoniadis, A., Gijbels, I., and Verhasselt, A. (2012). Variable
  selection in additive models using P-splines. \emph{Technometrics}
- \strong{54}(4): 425-438. \url{https://doi.org/10.1080/00401706.2012.726000}
+ \strong{54}(4): 425-438.
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

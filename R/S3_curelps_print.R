@@ -19,7 +19,7 @@
 #'  95\% pointwise credible interval.}
 #'
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @seealso \code{\link{curelps}}, \code{\link{curelps.extract}},
 #'  \code{\link{plot.curelps}}

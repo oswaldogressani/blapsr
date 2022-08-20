@@ -9,7 +9,7 @@ snmatch(x, y, p = c(0.025, 0.5, 0.975))
 \arguments{
 \item{x}{A numeric vector on the domain of the target density.}
 
-\item{y}{The y-coordinates of the target density on grid \code{x}.}
+\item{y}{The y-coordinates of the target density on grid x.}
 
 \item{p}{Vector of probabilities at which to compute quantiles of the
 skew-normal fit.}
@@ -17,18 +17,18 @@ skew-normal fit.}
 \value{
 A list with the following components:
 
-\item{location \verb{ }}{Estimated location parameter.}
+\item{location}{Estimated location parameter.}
 
 \item{scale}{Estimated scale parameter.}
 
 \item{shape}{Estimated shape parameter.}
 
 \item{snfit}{Fitted values of the skew-normal density
-  computed on an equally spaced grid between \code{min(x)}
-  and \code{max(x)}.}
+  computed on an equally spaced grid between min(x)
+  and max(x).}
 
 \item{quant}{Vector of quantiles of the skew-normal fit
-  computed on the input vector of probabilities \code{p}.}
+  computed on the input vector of probabilities p.}
 
 \item{xgrid}{Equidistant grid on which the skew-normal fitted
   density is computed.}
@@ -49,7 +49,7 @@ x on the real line is:
 where \eqn{\phi()} and \eqn{\psi()} denote the standard Gaussian density and
 cumulative distribution function respectively (see Azzalini 2018).
 The first moment and second and third central moments of the target density
-are computed based on the \code{x, y} coordinates using the trapezoidal rule
+are computed based on the x, y coordinates using the trapezoidal rule
 and matched against the theoretical moments of a skew-normal distribution.
 The solution to this system of equations is the method of moment estimate of
 the location, scale and shape parameters of a skew-normal density.
@@ -86,5 +86,5 @@ Azzalini, A. (2018). The Skew-Normal and Related families.
 \emph{Cambridge University Press}.
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

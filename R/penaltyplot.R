@@ -32,7 +32,7 @@
 #'  (log-)posterior penalty vector v is approximated by a multivariate Gaussian
 #'   and the routine shows the marginal distributions.
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @examples
 #' ### Classic simulated data example (with simgamdata)

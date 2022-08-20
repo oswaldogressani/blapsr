@@ -87,5 +87,5 @@ par(opar)
  \code{\link{curelps.extract}}, \code{\link{print.curelps}}.
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

@@ -22,5 +22,5 @@ Prints informative output of a fitted Cox proportional hazards model
 \code{\link{coxlps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

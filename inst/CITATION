@@ -4,11 +4,11 @@ citEntry(entry = "Manual",
   title        = "The blapsr package for fast Bayesian inference in latent Gaussian models
     by combining Laplace approximations and P-splines.",
   author       = personList(as.person("Gressani Oswaldo"), as.person("Lambert Philippe")),
-  year         = "2020",
+  year         = "2022",
   url          = "https://www.blapsr-project.org/",
 
   textVersion  =
-  paste("Gressani, O. and Lambert, P. (2020).",
+  paste("Gressani, O. and Lambert, P. (2022).",
         "The blapsr package for fast Bayesian inference in latent Gaussian models
     by combining Laplace approximations and P-splines.",
     "https://www.blapsr-project.org/.")

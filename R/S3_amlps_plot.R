@@ -60,7 +60,7 @@
 #'
 #'  \item{smoo.index}{The index of the smooth function.}
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @seealso \code{\link{amlps}}, \code{\link{amlps.object}},
 #'  \code{\link{print.amlps}}

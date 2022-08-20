@@ -11,19 +11,19 @@ cubicbs(x, lower, upper, K)
 B-spline basis.}
 
 \item{lower, upper}{The lower and upper bounds of the B-spline basis domain.
-Must be finite with \code{lower < upper}.}
+Must be finite with lower < upper.}
 
 \item{K}{A positive integer specifying the number of B-spline functions in
 the basis.}
 }
 \value{
-An object of class \code{cubicbs} for which
-\code{print} and \code{plot} methods are available. The \code{cubicbs}
+An object of class cubicbs for which
+print and plot methods are available. The cubicbs
 class consists of a list with the following components:
 
 \item{x}{A numeric vector on which the basis is evaluated.}
 
-\item{lower, upper \verb{ }}{The lower and upper bounds of the basis domain.}
+\item{lower, upper}{The lower and upper bounds of the basis domain.}
 
 \item{K}{The number of cubic B-spline functions in the basis.}
 
@@ -35,10 +35,10 @@ class consists of a list with the following components:
 
 \item{Bmatrix}{The B-spline basis matrix.}
 
-The \code{print} method summarizes the B-spline basis and the \code{plot}
+The print method summarizes the B-spline basis and the plot
 method gives a graphical representation of the basis
 with dashed vertical lines indicating knot placement and blue ticks the
-coordinates of \code{x}.
+coordinates of x.
 }
 \description{
 Computation of a cubic B-spline basis matrix.
@@ -56,8 +56,8 @@ Eilers, P.H.C. and Marx, B.D. (1996). Flexible smoothing with
 B-splines and penalties. \emph{Statistical Science}, \strong{11}(2): 89-121.
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 
-The core algorithm of the \code{cubicbs} function owes much to a code written
+The core algorithm of the cubicbs function owes much to a code written
 by Phlilippe Lambert.
 }

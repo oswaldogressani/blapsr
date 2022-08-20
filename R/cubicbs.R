@@ -6,21 +6,21 @@
 #'          B-spline basis.
 #'
 #' @param lower,upper The lower and upper bounds of the B-spline basis domain.
-#'                     Must be finite with \code{lower < upper}.
+#'                     Must be finite with lower < upper.
 #' @param K A positive integer specifying the number of B-spline functions in
 #'          the basis.
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
-#' The core algorithm of the \code{cubicbs} function owes much to a code written
+#' The core algorithm of the cubicbs function owes much to a code written
 #' by Phlilippe Lambert.
 #
-#' @return An object of class \code{cubicbs} for which
-#' \code{print} and \code{plot} methods are available. The \code{cubicbs}
+#' @return An object of class cubicbs for which
+#' print and plot methods are available. The cubicbs
 #' class consists of a list with the following components:
 #'
 #' \item{x}{A numeric vector on which the basis is evaluated.}
 #'
-#' \item{lower, upper \verb{ }}{The lower and upper bounds of the basis domain.}
+#' \item{lower, upper}{The lower and upper bounds of the basis domain.}
 #'
 #' \item{K}{The number of cubic B-spline functions in the basis.}
 #'
@@ -32,10 +32,10 @@
 #'
 #' \item{Bmatrix}{The B-spline basis matrix.}
 #'
-#' The \code{print} method summarizes the B-spline basis and the \code{plot}
+#' The print method summarizes the B-spline basis and the plot
 #' method gives a graphical representation of the basis
 #' with dashed vertical lines indicating knot placement and blue ticks the
-#' coordinates of \code{x}.
+#' coordinates of x.
 #'
 #' @examples
 #' lb <- 0  # Lower bound

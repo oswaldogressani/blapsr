@@ -31,7 +31,7 @@
 #'   computationally intensive. Vertical ticks on the x-axis correspond to the
 #'   observed follow-up times.
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @examples
 #'

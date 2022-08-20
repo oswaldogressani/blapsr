@@ -30,7 +30,7 @@ This is version 0.6.1 (submitted to CRAN on 2022-08-20).
 ### Website ###
 <hr />
 
-A website is dedicated to the package: https://blapsr-project.org. The link to the
+A website is dedicated to the package: https://www.blapsr-project.org. The link to the
 CRAN page is https://cran.r-project.org/package=blapsr .
 
 ### Special thanks ###

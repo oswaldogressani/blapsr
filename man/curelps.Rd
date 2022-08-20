@@ -102,22 +102,21 @@ par(opar)
 \references{
 Cox, D.R. (1972). Regression models and life-tables.
   \emph{Journal of the Royal Statistical Society: Series B (Methodological)}
-  \strong{34}(2): 187-202. \url{https://doi.org/10.1111/j.2517-6161.1972.tb00899.x}
+  \strong{34}(2): 187-202.
 
 Bremhorst, V. and Lambert, P. (2016). Flexible estimation in
   cure survival models using Bayesian P-splines.
   \emph{Computational Statistical & Data Analysis} \strong{93}: 270-284.
-  \url{https://doi.org/10.1016/j.csda.2014.05.009}
 
 Gressani, O. and Lambert, P. (2018). Fast Bayesian inference
   using Laplace approximations in a flexible promotion time cure model based
   on P-splines. \emph{Computational Statistical & Data Analysis} \strong{124}:
-  151-167. \url{https://doi.org/10.1016/j.csda.2018.02.007}
+  151-167.
 
 Lambert, P. and Bremhorst, V. (2019). Estimation and
   identification issues in the promotion time cure model when the same
   covariates influence long- and short-term survival. \emph{Biometrical
-  Journal} \strong{61}(2): 275-289. \url{https://doi.org/10.1002/bimj.201700250}
+  Journal} \strong{61}(2): 275-289.
 }
 \seealso{
 \code{\link{curelps.object}}, \code{\link{curelps.extract}},
@@ -125,5 +124,5 @@ Lambert, P. and Bremhorst, V. (2019). Estimation and
  \code{\link{Surv}}.
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

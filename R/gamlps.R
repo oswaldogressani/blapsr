@@ -78,7 +78,7 @@
 #'   \code{\link{print.gamlps}}. Fitted smooth terms can be visualized with the
 #'   \code{\link{plot.gamlps}} routine.
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @seealso \code{\link{cubicbs}}, \code{\link{gamlps.object}},
 #'  \code{\link{print.gamlps}}, \code{\link{plot.gamlps}}
@@ -109,7 +109,7 @@
 #' @references Gressani, O. and Lambert, P. (2018). Fast Bayesian inference
 #'  using Laplace approximations in a flexible promotion time cure model based
 #'  on P-splines. \emph{Computational Statistical & Data Analysis} \strong{124}:
-#'  151-167.\url{https://doi.org/10.1016/j.csda.2018.02.007}
+#'  151-167.
 
 #'
 #' @export

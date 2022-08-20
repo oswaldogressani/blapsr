@@ -66,5 +66,5 @@ legend("topright", c("Bayesian LPS", "Target"), col = c("black", "red"),
 \code{\link{coxlps}} \code{\link{coxlps.object}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }

@@ -39,11 +39,11 @@
 #' sim <- simgamdata(n = 150, dist = "poisson", scale = 0.3)
 #' plot(sim)
 #'
-#' @author Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+#' @author Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 #'
 #' @references Antoniadis, A., Gijbels, I., and Verhasselt, A. (2012). Variable
 #'  selection in additive models using P-splines. \emph{Technometrics}
-#'  \strong{54}(4): 425-438. \url{https://doi.org/10.1080/00401706.2012.726000}
+#'  \strong{54}(4): 425-438.
 #'
 #' @export
 

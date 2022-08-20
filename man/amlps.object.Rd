@@ -34,7 +34,7 @@ An \code{amlps} object has the following elements:
  evaluated at vmap.}
 \item{pen.family}{The family of the posterior distribution for v. It is either
  "skew-normal" or "gaussian".}
-\item{pendist.params\verb{  }}{The parameterization for the posterior distribution of
+\item{pendist.params}{The parameterization for the posterior distribution of
  v. If the posterior of v belongs to the skew-normal family, then
  \code{pendist.params} is a matrix with as many rows as the number of smooth
  terms \code{q}. Each row contains the location, scale and shape parameter
@@ -59,5 +59,5 @@ model with the Laplace-P-spline approach.
 \code{\link{plot.amlps}}
 }
 \author{
-Gressani Oswaldo \email{oswaldo_gressani@hotmail.fr}.
+Oswaldo Gressani \email{oswaldo_gressani@hotmail.fr}.
 }
